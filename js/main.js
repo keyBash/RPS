@@ -12,13 +12,13 @@ function getResult() {
   if (playerSelection === computerSelection) {
     score = 0;
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
-    score = 1,countHuman++;
+    (score = 1), countHuman++;
   } else if (playerSelection === "paper" && computerSelection === "rock") {
-    score = 1,countHuman++;
+    (score = 1), countHuman++;
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
-    score = 1,countHuman++;
+    (score = 1), countHuman++;
   } else {
-    score = -1,countAI++;
+    (score = -1), countAI++;
   }
   return score;
 }
@@ -35,25 +35,18 @@ function getWinner() {
   }
 }
 
-
-
-
-
-function playGame(){
-  let play = getWinner()
- console.log(`👽${countAI} vs 😀 ${countHuman}`)
- if(score = 1){
-  ++countHuman
- }else{
-  ++countAI
- }
- 
- }
-
+function playGame() {
+  let play = getWinner();
+  console.log(`👽${countAI} vs 😀 ${countHuman}`);
+  if ((score = 1)) {
+    ++countHuman;
+  } else {
+    ++countAI;
+  }
   
-
+  
+}
 
 
 
 playGame()
-
