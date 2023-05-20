@@ -50,7 +50,7 @@ const getResult = () => {
   } else if (userChoise === "scissors" && computerSelection === "paper") {
     (result = "You win"), countHuman++;
   } else {
-    (result = "👽 won😈"), countAI++;
+    (result = "👽 woin😈"), countAI++;
   }
   resultDisplay.innerHTML = result;
 };
